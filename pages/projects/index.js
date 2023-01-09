@@ -20,7 +20,7 @@ const ProjectPage = ({data}) => {
   return (
     <div>
         {items.map((item)=>{
-          return  <Link key={item.id} href={`/projects/${item.id}`}><Projects url={item.ssh_url} des={item.description} language={item.language} star={item.score} fork={item.forks} /></Link>
+          return  <Link key={item.id} href={`/projects/#`}><Projects url={item.ssh_url} des={item.description} language={item.language} star={item.score} fork={item.forks} /></Link>
         })}
     </div>
   )
